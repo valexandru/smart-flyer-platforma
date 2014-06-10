@@ -1,0 +1,342 @@
+2014-05-26 10:33:08 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/add
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 10:33:15 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/user
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 10:33:19 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 11:15:23 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Users
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 11:38:46 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Users/
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 12:24:04 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Users
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 12:25:06 Error: [MissingViewException] View file "/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/View/Users/index.ctp',
+)
+Request URL: /cakephp/users
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-05-26 16:58:02 Error: [MissingActionException] Action UsersController::add.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.php',
+)
+Request URL: /cakephp/users/add.php
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 16:58:40 Error: [MissingViewException] View file "/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/View/Users/login.ctp',
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-05-26 17:53:49 Error: [MissingActionException] Action UsersController::login.ctp"() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.ctp"',
+)
+Request URL: /cakephp/Users/login.ctp"
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 17:54:03 Error: [MissingActionException] Action UsersController::login.ctp"() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.ctp"',
+)
+Request URL: /cakephp/Users/login.ctp"
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 17:54:10 Error: [MissingActionException] Action UsersController::login.ctp() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login.ctp',
+)
+Request URL: /cakephp/Users/login.ctp
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 17:55:23 Error: [MissingActionException] Action UsersController::logouyt() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logouyt',
+)
+Request URL: /cakephp/Users/logouyt
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 17:55:29 Error: [MissingActionException] Action UsersController::loginm() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'loginm',
+)
+Request URL: /cakephp/Users/loginm
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 17:57:35 Error: [PrivateActionException] Private Action UsersController::redirect() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'redirect',
+)
+Request URL: /cakephp/Users/redirect
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-05-26 18:09:25 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/login
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 18:27:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/cake.generic.css
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 18:27:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/cake.power.gif
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 18:27:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/cake.generic.css
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-26 18:27:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/cake.power.gif
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-27 15:19:41 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cakephp/users/register
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 12:44:59 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cakephp/users/register
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 12:49:58 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 12:50:01 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 13:14:15 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#9 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-06-10 14:30:12 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/View/Users/edit.ctp, line 14]
+2014-06-10 14:30:12 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp/users/edit/2
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/smart-...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/smart-...', 14, Array)
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/smart-...', 14, Array)
+#3 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-06-10 15:51:41 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 15:51:56 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 15:52:10 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/user/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 15:52:16 Error: [MissingActionException] Action UsersController::dashboard() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dashboard',
+)
+Request URL: /cakephp/users/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-06-10 15:52:23 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 15:52:35 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 15:52:47 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-06-10 15:54:50 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
