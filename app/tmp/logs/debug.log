@@ -1,0 +1,117 @@
+2014-07-17 06:54:06 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 233]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 233
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 06:54:09 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 233]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 233
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 06:54:40 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 233]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 233
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 06:54:48 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 233]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 233
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 06:55:36 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 247]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 247
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 07:11:58 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 247]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 247
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 07:12:06 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 247]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 247
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 07:12:08 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 247]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 247
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+
+2014-07-17 07:12:09 Notice: Notice (8): Undefined variable: params in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ExceptionRenderer.php, line 247]
+Trace:
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 247
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 176
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 120
+call_user_func - [internal], line ??
+ErrorHandler::handleFatalError() - CORE/Cake/Error/ErrorHandler.php, line 254
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 203
+call_user_func - [internal], line ??
+App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
+App::shutdown() - CORE/Cake/Core/App.php, line 902
+[main] - [internal], line ??
+

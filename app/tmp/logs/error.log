@@ -340,3 +340,44 @@ Request URL: /cakephp/cakephp/dashboard
 Stack Trace:
 #0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-07-18 08:01:27 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/Model/User.php, line 10]
+2014-07-18 08:01:27 Error: [FatalErrorException] syntax error, unexpected '.', expecting ')'
+Request URL: /cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/smart-...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/smart-...', 10, Array)
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/smart-...', 10, Array)
+#3 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-18 08:02:36 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/Model/User.php, line 10]
+2014-07-18 08:02:36 Error: [FatalErrorException] syntax error, unexpected '.', expecting ')'
+Request URL: /cakephp/dashboard
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/smart-...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/smart-...', 10, Array)
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/smart-...', 10, Array)
+#3 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-18 08:04:13 Error: [MissingTableException] Table products for model Product was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'products',
+  'class' => 'Product',
+  'ds' => 'default',
+)
+Request URL: /cakephp/products/add
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Model/Model.php(3501): Model->setSource('products')
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Model/Model.php(1357): Model->getDataSource()
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/Helper/FormHelper.php(467): FormHelper->_introspectModel('Product', 'fields')
+#4 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/View/Products/add.ctp(3): FormHelper->create('Product')
+#5 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/View.php(948): include('/var/www/smart-...')
+#6 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/View.php(910): View->_evaluate('/var/www/smart-...', Array)
+#7 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/View/View.php(471): View->_render('/var/www/smart-...')
+#8 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#9 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#10 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

@@ -6,9 +6,9 @@ class User extends AppModel {
      
     public $avatarUploadDir = 'img/avatars';
 
-    public $virtualFields = array(
-    'companyname' => User.company_name
-    );
+//    public $virtualFields = array(
+//    'companyname' => User.company_name;
+//    );
 
     public $validate = array(
         'username' => array(
