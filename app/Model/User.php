@@ -75,7 +75,7 @@ class User extends AppModel {
             ),
              'unique' => array(
                 'rule'    => array('isUniqueCompany'),
-                'message' => 'This username is already in use'
+                'message' => 'This company name is already in use'
             ),
         ),
         'password_update' => array(

@@ -10,7 +10,7 @@ class UsersController extends AppController {
      
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('login','index', 'add');
+        $this->Auth->allow('login','index', 'logout');
     }
      
  
@@ -46,19 +46,27 @@ class UsersController extends AppController {
         $this->set(compact('users'));
     }
  
- 
-    public function add() {
+     public function add() { 
         if ($this->request->is('post')) {
-                 
-            $this->User->create();
-            if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been created'));
-                $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The user could not be created. Please, try again.'));
-            }  
-        }
-    }
+
+                $this->loadModel('Company'); 
+                $this->User->create(); 
+
+                if ($this->User->save($this->request->data)) { 
+
+                        $data = array(
+                                'nume' => $this->request->data['User']['company_name'], 
+				'user_id' => $this->User->id
+                        ); 
+                        $this->Company->save($data); 
+                        $this->Session->setFlash(__('The user has been created')); 
+                        $this->redirect(array('action' => 'index')); 
+                } else { 
+                        $this->Session->setFlash(__('The user could not be created. Please, try again.')); 
+		}
+	}
+}
+ 
  
     public function edit($id = null) {
  
