@@ -41,7 +41,7 @@ class ProductsController extends AppController {
             $this->Session->setFlash(__('The product has been created'));
             $this->redirect(array('action' => 'index'));
         } else {
-            $this->Session->setFlash(__('The user could not be created. Please, try again.'));
+            $this->Session->setFlash(__('The product could not be created. Please, try again.'));
         }  
     }
     }
