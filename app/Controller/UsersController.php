@@ -1,27 +1,33 @@
 <?php
 
 class UsersController extends AppController {
- 
+
     public $paginate = array(
         'limit' => 25,
         'conditions' => array('status' => '1'),
         'order' => array('User.username' => 'asc' )
     );
-     
+
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('login','index', 'logout');
-    }
-     
- 
- 
+	if($this->Auth->user('role')=='admin'){
+	    $this->set("role",1);//it will set a variable role for your view
+     	}
+	else
+	{
+	    $this->set("role",2);//2 is the role of normal users
+	}
+   }
+
+
     public function login() {
-         
+
         //if already logged-in, redirect
         if($this->Session->check('Auth.User')){
-            $this->redirect(array('action' => 'index'));     
+            $this->redirect(array('action' => 'index'));
         }
-         
+
         // if we get the post information, try to authenticate
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
