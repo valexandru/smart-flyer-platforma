@@ -4,6 +4,17 @@ class Company extends AppModel {
       public $useTable = 'firme';
 
       public $validate = array(
+      'id' => array(
+            'nonEmpty' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'A number is required',
+                'allowEmpty' => false
+            ),
+             'isnumeric' => array(
+                'rule'    => array('isanumber'),
+                'message' => 'This is not a number'
+            ),
+        ),
       'latitudine' => array(
             'nonEmpty' => array(
                 'rule' => array('notEmpty'),

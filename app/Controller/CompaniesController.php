@@ -27,7 +27,7 @@ class CompaniesController extends AppController {
         $user = $this->Company->findById($id);
 
         if ($this->request->is('post') || $this->request->is('put')) {
-            $this->Company->user_id = $id;
+            $this->Company->id = $id;
             if ($this->Company->save($this->request->data)) {
                  $this->Session->setFlash(__('The data has been updated'));
                  $this->redirect(array('action' => 'edit', $id));

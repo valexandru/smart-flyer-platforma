@@ -1,6 +1,6 @@
 <div class="users form">
 
-<?php echo $this->Form->create('Product');?>
+<?php echo $this->Form->create('Product', array('type' => 'post', 'action' => 'add'));?>
     <fieldset>
         <legend><?php echo __('Add Product'); ?></legend>
         <?php echo $this->Form->input('nume');
