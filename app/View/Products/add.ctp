@@ -10,7 +10,7 @@
 		echo $this->Form->submit('Add Product', array('class' => 'form-submit',  'title' => 'Click here to add product') ); 
 ?>
     </fieldset>
-<?php echo $this->Form->end(); ?>
+<?php echo $this->Form->end(); print_r($pix);?>
 </div>
 <?php if($this->Session->check('Auth.User')){
 	echo $this->Html->link( "Return to Dashboard",   array('controller'=>'users','action'=>'index') );

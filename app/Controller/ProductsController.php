@@ -22,7 +22,13 @@ class ProductsController extends AppController {
         $this->set(compact('products'));
     }
     public function add() {
+ 
+        $pix = $this->Product->find('first', array(
+ 	      'order' => array('Product.ppid' => 'desc')));
+	$this->set('pix',$pix['Product']['ppid']+1);
+
 	if ($this->request->is('post')) {
+
         	$this->loadModel('Company');
 	        $this->Product->create();
 
@@ -31,7 +37,9 @@ class ProductsController extends AppController {
 
 	        debug($companyid);	
 	        debug($this->Auth->user('id'));
-	        $data = array('pid' => $companyid['Company']['id'], 
+
+	        $data = array( 'id' => $pix['Product']['ppid']+1,
+				'pid' => $companyid['Company']['id'], 
 					'nume' => $this->request->data['Product']['nume'], 
 						  'pret' => $this->request->data['Product']['pret'],
 							'descriere' => $this->request->data['Product']['descriere'] 
@@ -74,15 +82,23 @@ class ProductsController extends AppController {
               $this->redirect(array('action'=>'index'));
         }
  
-        $product = $this->Product->findById($ppid);
+	$product= $this->Product->find('first', array(
+                'conditions' => array('Product.ppid' => $ppid)
+        ));
+
+        $this->set('product',$product);
         if (!$product) {
               $this->Session->setFlash('Invalid Product ID Provided');
               $this->redirect(array('action'=>'index'));
         }
  
         if ($this->request->is('post') || $this->request->is('put')) {
-              $this->Product->ppid = $ppid;
-              if ($this->Product->save($this->request->data)) {
+               $data = array('id' => $product['Product']['id'], 
+                                       'nume' => $this->request->data['Product']['nume'], 
+                                                'pret' => $this->request->data['Product']['pret'],
+                                                      'descriere' => $this->request->data['Product']['descriere'] 
+                );
+              if ($this->Product->save($data)) {
                    $this->Session->setFlash(__('The product has been updated'));
                    $this->redirect(array('action' => 'edit', $ppid));
               }else{
