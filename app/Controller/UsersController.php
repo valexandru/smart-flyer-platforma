@@ -36,7 +36,6 @@ class UsersController extends AppController {
         // if we get the post information, try to authenticate
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
-                $this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
                 $this->redirect($this->Auth->redirectUrl());
             } else {
                 $this->Session->setFlash(__('Invalid username or password'));
@@ -79,13 +78,10 @@ class UsersController extends AppController {
 }
  
  
-    public function edit($id = null) {
- 
-            if (!$id) {
-                $this->Session->setFlash('Please provide a user id');
-                $this->redirect(array('action'=>'index'));
-            }
- 
+    public function edit() {
+
+	    $id = $this->Auth->user('id'); 
+
             $user = $this->User->findById($id);
             if (!$user) {
                 $this->Session->setFlash('Invalid User ID Provided');
@@ -96,7 +92,7 @@ class UsersController extends AppController {
                 $this->User->id = $id;
                 if ($this->User->save($this->request->data)) {
                     $this->Session->setFlash(__('The user has been updated'));
-                    $this->redirect(array('action' => 'edit', $id));
+                    $this->redirect(array('action' => 'edit'));
                 }else{
                     $this->Session->setFlash(__('Unable to update your user.'));
                 }

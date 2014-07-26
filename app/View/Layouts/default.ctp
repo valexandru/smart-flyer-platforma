@@ -63,6 +63,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			</div>
         	        <div class="collapse navbar-collapse navbar-right proxima-bold">
 				<ul class="nav navbar-nav">
+					<?php if($this->Session->check('Auth.User')){ ?>
 					<li><a class="active" href="/">Home</a></li>
 					<li class="dropdown">
 					        <a class="dropdown-toggle" data-toggle="dropdown" href="#">				        
@@ -73,15 +74,28 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					          <li><?php echo $this->Html->link( "Edit Product",   array('controller'=>'products','action'=>'show') );?></li>
 					        </ul>
 				        </li>
-                                               <li class="dropdown">
-                                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">                                       
-                                                                My account <span class="caret"></span>
-                                                       </a>
-                                                       <ul class="dropdown-menu" role="menu">
-                                                         <li><?php echo $this->Html->link( "Edit Details",   array('controller'=>'companies','action'=>'edit') );?></li>
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">                                       
+                                                         My account <span class="caret"></span>
+                                                 </a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                         <li><?php echo $this->Html->link( "Company Details",   array('controller'=>'companies','action'=>'edit') );?></li>
+                                                         <li><?php echo $this->Html->link( "Account Details",   array('controller'=>'users','action'=>'edit') );?></li>
                                                          <li><?php echo $this->Html->link( "Logout",   array('controller'=>'users','action'=>'logout') );?></li>
-                                                       </ul>
-                                               </li>
+                                                </ul>
+                                        </li>
+					<?php if (AuthComponent::user('role')=="admin") { ?>
+					    <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                        Admin  <span class="caret"></span>
+                                                 </a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                         <li><?php echo $this->Html->link( "Add user",   array('controller'=>'users','action'=>'add') ); ?> </li>
+                                                </ul>
+                                             </li>
+					<?php } } else { ?>
+						<li><?php echo $this->Html->link( "Login",   array('controller'=>'users','action'=>'login') );?></li>
+					<?php } ?>   
 				</ul>	
 			</div>
 	        </div>	
@@ -91,12 +105,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</div>
 	<div id="container">
 		<div id="content">
-			<?php
-				$teams = $this->requestAction(
-            				 array('controller' => 'app', 'action' => 'teams'),
-				             array('return')
-			          );
-			?>
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>

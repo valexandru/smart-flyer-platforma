@@ -16,9 +16,3 @@
     </fieldset>
 <?php echo $this->Form->end(); ?>
 </div>
-<?php 
-echo $this->Html->link( "Return to Dashboard",   array('action'=>'index') ); 
-?>
-<br/>
-<?php 
-echo $this->Html->link( "Logout",   array('action'=>'logout') ); 
