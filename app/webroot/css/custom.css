@@ -1,0 +1,179 @@
+/* overrides for the main menu */
+
+#menu-wrap .navbar-default {
+
+	border-color: #E7E7E7;
+
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 79%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0)), color-stop(51%,rgba(255,255,255,0)), color-stop(79%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 79%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 79%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 79%,rgba(255,255,255,0) 100%); /* IE10+ */
+
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 79%,rgba(255,255,255,0) 100%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+#mainmenu .navbar-brand {
+
+    height: 55px;
+
+    line-height: 35px;
+
+    padding: 10px;
+
+}
+
+
+
+#mainmenu .navbar-brand img {
+
+    height: 35px;
+
+}
+
+
+
+#mainmenu .navbar-nav > li > a {
+
+    line-height: 25px;
+
+    text-transform: uppercase;
+
+}
+
+#mainmenu a:hover {
+
+    color: #6eaecc;
+
+}
+
+
+
+#mainmenu li {
+
+    clear: none;
+
+    float: left;
+
+}
+
+
+
+#mainmenu a.active {
+
+    background: none repeat scroll 0 0 #219cd6 !important;
+
+    color: #fff !important;
+
+    padding-left: 45px;
+
+    padding-right: 55px;
+
+    position: relative;
+
+}
+
+
+
+#mainmenu a.active:before {
+
+    border-left: 28px solid #fff;
+
+    border-top: 55px solid #219cd6;
+
+    content: "";
+
+    display: inline-block;
+
+    font-size: 0;
+
+    left: 0;
+
+    line-height: 0;
+
+    position: absolute;
+
+    top: 0;
+
+    vertical-align: bottom;
+
+    width: 38px;
+
+}
+
+
+
+#mainmenu a.active:after {
+
+    border-left: 28px solid #219cd6;
+
+    border-top: 55px solid #fff;
+
+    content: "";
+
+    display: inline-block;
+
+    font-size: 0;
+
+    line-height: 0;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    vertical-align: bottom;
+
+    width: 38px;
+
+}
+
+/* Header */
+
+#header {
+
+     background: url(http://xinnovation.valexandru.com/wp-content/uploads/2014/05/iPhone-5s-Hand-Mockup3.png) no-repeat center center fixed;
+
+        -webkit-background-size: cover;
+
+        -moz-background-size: cover;
+
+        -o-background-size: cover;
+
+     background-size: cover;
+
+     min-height: 800px;
+
+     /*height: 800px;*/
+
+     /*padding-bottom: 200px;*/
+
+}
+
+/* Footer */
+
+.top-buffer {  /* buffer before the copyright container */
+
+	margin-top:50px !important; 
+
+}
+
+#footer {
+
+    background-color: #1B1B1B;
+
+    color: #FFFFFF;
+
+    font-size: 125%;
+
+}
