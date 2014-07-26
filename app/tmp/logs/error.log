@@ -603,3 +603,395 @@ Request URL: /cakephp/smartflyer.ico
 Stack Trace:
 #0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-07-26 14:07:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/custom.css
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:07:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:07:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:16:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:16:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:22:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:24:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:36:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:36:03 Error: [MissingActionException] Action CompaniesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'CompaniesController',
+  'action' => 'img',
+)
+Request URL: /cakephp/companies/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 14:36:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:40:56 Error: [MissingActionException] Action ProductsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'img',
+)
+Request URL: /cakephp/products/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 14:41:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:41:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:41:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:41:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:41:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:41:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:45:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:45:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:47:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/js/jquery.common.min.js
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:47:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 14:53:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:08:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:09:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/img/header-image.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:36:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/img/header-image.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:36:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:37:10 Error: [MissingControllerException] Controller class DashboardimgController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardimgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/dashboardimg/header-image.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:37:10 Error: [MissingControllerException] Controller class DashboardimgController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardimgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/dashboardimg/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:37:13 Error: [MissingControllerException] Controller class DashboardController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/dashboard/img/header-image.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:37:13 Error: [MissingControllerException] Controller class DashboardController could not be found.
+Exception Attributes: array (
+  'class' => 'DashboardController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/dashboard/img/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:43:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 15:53:49 Error: [MissingActionException] Action CompaniesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'CompaniesController',
+  'action' => 'img',
+)
+Request URL: /cakephp/companies/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 15:53:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 16:02:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 16:02:50 Error: [MissingActionException] Action ProductsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'img',
+)
+Request URL: /cakephp/products/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 16:02:58 Error: [MissingActionException] Action ProductsController::list() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'list',
+)
+Request URL: /cakephp/products/list
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 16:08:11 Error: [MissingActionException] Action ProductsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'img',
+)
+Request URL: /cakephp/products/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 16:08:15 Error: [MissingActionException] Action CompaniesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'CompaniesController',
+  'action' => 'img',
+)
+Request URL: /cakephp/companies/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/smart-flyer.valexandru.com/public_html/cakephp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest))
+#2 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-26 16:08:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 16:14:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 16:20:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-26 16:27:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/img/logo.png
+Stack Trace:
+#0 /var/www/smart-flyer.valexandru.com/public_html/cakephp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

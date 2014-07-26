@@ -27,39 +27,82 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
-		echo $this->Html->css('cake.generic');
-
+		//Favicon
 		echo $this->Html->meta(
 		    'smartflyer.ico',	
 		    'img/smartflyer.ico',
 		    array('type' => 'icon')
 		);
+
+		//CSS
+                echo $this->Html->css('cake.generic');
+		echo $this->Html->css('custom.css');
+		
+		// Javascript/Jquery 
+		echo $this->Html->script('jquery.min.js');
+		echo $this->Html->script('jquery.common.min.js');
+
+		// Bootstrap
+		echo $this->Html->css('bootstrap.css');
+	   	echo $this->Html->css('bootstrap-theme.css');
+		echo $this->Html->script('bootstrap.min.js');
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 </head>
 <body>
+	<div id="menu-wrap">
+	    <nav class="navbar-default" role="navigation">
+		<div class="container" id="mainmenu">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<img alt="SmartFlyer" src="img/logo.png">
+				</a>
+			</div>
+        	        <div class="collapse navbar-collapse navbar-right proxima-bold">
+				<ul class="nav navbar-nav">
+					<li><a class="active" href="/">Home</a></li>
+					<li class="dropdown">
+					        <a class="dropdown-toggle" data-toggle="dropdown" href="#">				        
+							 Products <span class="caret"></span>
+					        </a>
+				        	<ul class="dropdown-menu" role="menu">
+					          <li><?php echo $this->Html->link( "Add Product",   array('controller'=>'products','action'=>'add') );?></li>
+					          <li><?php echo $this->Html->link( "Edit Product",   array('controller'=>'products','action'=>'show') );?></li>
+					        </ul>
+				        </li>
+                                               <li class="dropdown">
+                                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">                                       
+                                                                My account <span class="caret"></span>
+                                                       </a>
+                                                       <ul class="dropdown-menu" role="menu">
+                                                         <li><?php echo $this->Html->link( "Edit Details",   array('controller'=>'companies','action'=>'edit') );?></li>
+                                                         <li><?php echo $this->Html->link( "Logout",   array('controller'=>'users','action'=>'logout') );?></li>
+                                                       </ul>
+                                               </li>
+				</ul>	
+			</div>
+	        </div>	
+	    </nav>
+	</div>
+	<div id="header">
+	</div>
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
 		<div id="content">
-
+			<?php
+				$teams = $this->requestAction(
+            				 array('controller' => 'app', 'action' => 'teams'),
+				             array('return')
+			          );
+			?>
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
+		<div class="top-buffer" id="footer">
+			<div class="container text-right"> <b>&copy; 2014 xInnovation</b> </div>
 		</div>
 	</div>
 </body>

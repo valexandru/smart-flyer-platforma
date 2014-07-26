@@ -13,13 +13,18 @@ class UsersController extends AppController {
         $this->Auth->allow('login','index', 'logout');
 	if($this->Auth->user('role')=='admin'){
 	    $this->set("role",1);//it will set a variable role for your view
-     	}
+	}
 	else
 	{
 	    $this->set("role",2);//2 is the role of normal users
 	}
    }
 
+    public function getRole() {
+
+	return $role;
+
+    }
 
     public function login() {
 
