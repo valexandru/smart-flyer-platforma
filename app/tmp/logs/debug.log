@@ -115,3 +115,30 @@ App::_checkFatalError() - CORE/Cake/Core/App.php, line 929
 App::shutdown() - CORE/Cake/Core/App.php, line 902
 [main] - [internal], line ??
 
+2014-07-27 14:35:25 Notice: Notice (8): Undefined index: Company in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/Controller/ProductsController.php, line 68]
+Trace:
+ProductsController::show() - APP/Controller/ProductsController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-07-27 14:45:15 Notice: Notice (8): Undefined index: Company in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/Controller/ProductsController.php, line 68]
+Trace:
+ProductsController::show() - APP/Controller/ProductsController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-07-27 14:45:42 Notice: Notice (8): Undefined index: Company in [/var/www/smart-flyer.valexandru.com/public_html/cakephp/app/Controller/ProductsController.php, line 68]
+Trace:
+ProductsController::show() - APP/Controller/ProductsController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+

@@ -10,21 +10,8 @@ class UsersController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('login','index', 'logout');
-	if($this->Auth->user('role')=='admin'){
-	    $this->set("role",1);//it will set a variable role for your view
-	}
-	else
-	{
-	    $this->set("role",2);//2 is the role of normal users
-	}
+        $this->Auth->allow('login','index', 'edit', 'logout');
    }
-
-    public function getRole() {
-
-	return $role;
-
-    }
 
     public function login() {
 
@@ -36,7 +23,12 @@ class UsersController extends AppController {
         // if we get the post information, try to authenticate
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
-                $this->redirect($this->Auth->redirectUrl());
+              if (AuthComponent::user('status')==0) {
+		$this->Session->setFlash(__('Your user is deactivated'));
+		$this->redirect($this->Auth->logout());
+              } else {
+			$this->redirect($this->Auth->redirectUrl());
+		}
             } else {
                 $this->Session->setFlash(__('Invalid username or password'));
             }
@@ -57,7 +49,8 @@ class UsersController extends AppController {
     }
  
      public function add() { 
-        if ($this->request->is('post')) {
+      if (AuthComponent::user('role')=="admin") {   
+	if ($this->request->is('post')) {
 
                 $this->loadModel('Company'); 
                 $this->User->create(); 
@@ -70,13 +63,19 @@ class UsersController extends AppController {
                         ); 
                         $this->Company->save($data); 
                         $this->Session->setFlash(__('The user has been created')); 
-                        $this->redirect(array('action' => 'index')); 
+                        $this->redirect(array('action' => 'show')); 
                 } else { 
                         $this->Session->setFlash(__('The user could not be created. Please, try again.')); 
 		}
 	}
-}
- 
+     }
+    }
+    public function show(){
+       if (AuthComponent::user('role')=="admin") { 
+	       $usersData= $this->User->find('all');
+               $this->set('usersData',$usersData);
+       } 
+    }
  
     public function edit() {
 
@@ -103,44 +102,70 @@ class UsersController extends AppController {
             }
     }
  
-    public function delete($id = null) {
-         
+    public function deactivate($id = null) {
+     if (AuthComponent::user('role')=="admin") { 
         if (!$id) {
             $this->Session->setFlash('Please provide a user id');
-            $this->redirect(array('action'=>'index'));
+            $this->redirect(array('action'=>'show'));
         }
          
         $this->User->id = $id;
         if (!$this->User->exists()) {
             $this->Session->setFlash('Invalid user id provided');
-            $this->redirect(array('action'=>'index'));
+            $this->redirect(array('action'=>'show'));
         }
         if ($this->User->saveField('status', 0)) {
-            $this->Session->setFlash(__('User deleted'));
-            $this->redirect(array('action' => 'index'));
+            $this->Session->setFlash(__('User deactivated'));
+            $this->redirect(array('action' => 'show'));
         }
-        $this->Session->setFlash(__('User was not deleted'));
-        $this->redirect(array('action' => 'index'));
-    }
+        $this->Session->setFlash(__('User was not deactivated'));
+        $this->redirect(array('action' => 'show'));
+    
+     }
+   }
      
     public function activate($id = null) {
-         
+      if (AuthComponent::user('role')=="admin") {
         if (!$id) {
             $this->Session->setFlash('Please provide a user id');
-            $this->redirect(array('action'=>'index'));
+            $this->redirect(array('action'=>'show'));
         }
          
         $this->User->id = $id;
         if (!$this->User->exists()) {
             $this->Session->setFlash('Invalid user id provided');
-            $this->redirect(array('action'=>'index'));
+            $this->redirect(array('action'=>'show'));
         }
         if ($this->User->saveField('status', 1)) {
             $this->Session->setFlash(__('User re-activated'));
-            $this->redirect(array('action' => 'index'));
+            $this->redirect(array('action' => 'show'));
         }
         $this->Session->setFlash(__('User was not re-activated'));
-        $this->redirect(array('action' => 'index'));
-    }
+        $this->redirect(array('action' => 'show'));
+     }
+   }
+
+   public function delete($id = null) {
+     if (AuthComponent::user('role')=="admin") { 
+        if (!$id) {
+            $this->Session->setFlash('Please provide a user id');
+            $this->redirect(array('action'=>'show'));
+        }
+
+        $this->User->id = $id;
+        if (!$this->User->exists()) {
+            $this->Session->setFlash('Invalid user id provided');
+            $this->redirect(array('action'=>'show'));
+        }
+        if ($this->User->delete($id)) {
+            $this->Session->setFlash(__('User deleted'));
+            $this->redirect(array('action' => 'show'));
+        }
+        $this->Session->setFlash(__('User was not deleted'));
+        $this->redirect(array('action' => 'show'));
+    
+     }
+   }
+
  
 }

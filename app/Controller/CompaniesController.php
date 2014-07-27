@@ -20,8 +20,9 @@ class CompaniesController extends AppController {
         );
         $users = $this->paginate('Company');
         $this->set(compact('companies'));
+        $this->redirect(array('controller'=>'Users','action'=>'index'));
     }
-    public function edit($id = null) {
+    public function edit() {
 
 	$id = $this->Auth->user('id');
         $user = $this->Company->findById($id);
@@ -30,7 +31,7 @@ class CompaniesController extends AppController {
             $this->Company->id = $id;
             if ($this->Company->save($this->request->data)) {
                  $this->Session->setFlash(__('The data has been updated'));
-                 $this->redirect(array('action' => 'edit', $id));
+                 $this->redirect(array('action' => 'edit'));
             }else{
                  $this->Session->setFlash(__('Unable to update your data.'));
             }

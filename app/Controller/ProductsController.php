@@ -20,6 +20,7 @@ class ProductsController extends AppController {
         );
         $users = $this->paginate('Product');
         $this->set(compact('products'));
+	$this->redirect(array('controller'=>'Users','action'=>'index'));
     }
     public function add() {
  
@@ -48,7 +49,7 @@ class ProductsController extends AppController {
         	if ($this->Product->save($data)) {
 	            
 		    $this->Session->setFlash(__('The product has been created'));
-	            $this->redirect(array('action' => 'index'));
+	            $this->redirect(array('action' => 'show'));
 		} else {
 	            $this->Session->setFlash(__('The product could not be created. Please, try again.'));
 	        }  	

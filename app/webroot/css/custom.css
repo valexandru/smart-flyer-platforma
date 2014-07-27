@@ -142,7 +142,7 @@
 
 #header {
 
-     background: url(http://xinnovation.valexandru.com/wp-content/uploads/2014/05/iPhone-5s-Hand-Mockup3.png) no-repeat center center fixed;
+     background: url("http://smart-flyer.valexandru.com/cakephp/img/poza-header.jpg") no-repeat center center fixed !important ;
 
         -webkit-background-size: cover;
 
@@ -152,8 +152,11 @@
 
      background-size: cover;
 
-     min-height: 800px;
+     max-height: 647px;
 
+     min-height: 647px;
+
+     width: 100%;
      /*height: 800px;*/
 
      /*padding-bottom: 200px;*/

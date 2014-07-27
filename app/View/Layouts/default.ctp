@@ -58,13 +58,24 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div class="container" id="mainmenu">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="/">
-					<img alt="SmartFlyer" src="img/logo.png">
+					<img alt="SmartFlyer" src="http://smart-flyer.valexandru.com/cakephp/img/logo-resized.jpg">
 				</a>
 			</div>
         	        <div class="collapse navbar-collapse navbar-right proxima-bold">
 				<ul class="nav navbar-nav">
 					<?php if($this->Session->check('Auth.User')){ ?>
 					<li><a class="active" href="/">Home</a></li>
+					<?php if (AuthComponent::user('role')=="admin") { ?>
+					    <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                        Admin  <span class="caret"></span>
+                                                 </a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                         <li><?php echo $this->Html->link( "Add user",   array('controller'=>'users','action'=>'add') ); ?> </li>
+							<li><?php echo $this->Html->link( "View users",   array('controller'=>'users','action'=>'show') ); ?> </li> 
+                                                </ul>
+                                            </li>
+					<?php } ?>
 					<li class="dropdown">
 					        <a class="dropdown-toggle" data-toggle="dropdown" href="#">				        
 							 Products <span class="caret"></span>
@@ -84,16 +95,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                                                          <li><?php echo $this->Html->link( "Logout",   array('controller'=>'users','action'=>'logout') );?></li>
                                                 </ul>
                                         </li>
-					<?php if (AuthComponent::user('role')=="admin") { ?>
-					    <li class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                        Admin  <span class="caret"></span>
-                                                 </a>
-                                                <ul class="dropdown-menu" role="menu">
-                                                         <li><?php echo $this->Html->link( "Add user",   array('controller'=>'users','action'=>'add') ); ?> </li>
-                                                </ul>
-                                             </li>
-					<?php } } else { ?>
+					<?php } else { ?>
 						<li><?php echo $this->Html->link( "Login",   array('controller'=>'users','action'=>'login') );?></li>
 					<?php } ?>   
 				</ul>	
@@ -102,7 +104,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	    </nav>
 	</div>
 	<div id="header">
-	</div>
+	</div> 
 	<div id="container">
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
