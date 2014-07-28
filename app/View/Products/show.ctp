@@ -1,6 +1,5 @@
 <h1>Sorted Entries</h1>
 <?php
- echo $this->Html->link("Index", array('controller'=>'Users', 'action' => 'index'));
    if (!empty($editData)) {
   ?>
  <table>

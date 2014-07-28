@@ -1,7 +1,7 @@
 <?php
 
 /*
- * All database connection variables
+ * Database connection variables
  */
 
 define('DB_USER', "hackaton"); // db user

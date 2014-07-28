@@ -271,7 +271,7 @@ fieldset {
 	padding: 16px 10px;
 }
 fieldset legend {
-	color: #e32;
+	color: #219CD6;
 	font-size: 160%;
 	font-weight: bold;
 }
@@ -360,16 +360,20 @@ input[type=submit] {
 }
 form .submit input[type=submit] {
 	background:#62af56;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
-	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
-	background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
+	background-image: -moz-linear-gradient(top, rgba(30,87,153,0.77) 0%, rgba(32,124,202,0.89) 50%, rgba(32,124,202,0.89) 51%, rgba(32,124,202,1) 98%, rgba(32,124,202,1) 99%, rgba(32,124,202,1) 100%); /* FF3.6+ */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0.77)), color-stop(50%,rgba(32,124,202,0.89)), color-stop(51%,rgba(32,124,202,0.89)), color-stop(98%,rgba(32,124,202,1)), color-stop(99%,rgba(32,124,202,1)), color-stop(100%,rgba(32,124,202,1))); /* Chrome,Safari4+ */
+background-image: -webkit-linear-gradient(top, rgba(30,87,153,0.77) 0%,rgba(32,124,202,0.89) 50%,rgba(32,124,202,0.89) 51%,rgba(32,124,202,1) 98%,rgba(32,124,202,1) 99%,rgba(32,124,202,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image: -o-linear-gradient(top, rgba(30,87,153,0.77) 0%,rgba(32,124,202,0.89) 50%,rgba(32,124,202,0.89) 51%,rgba(32,124,202,1) 98%,rgba(32,124,202,1) 99%,rgba(32,124,202,1) 100%); /* Opera 11.10+ */
+background-image: -ms-linear-gradient(top, rgba(30,87,153,0.77) 0%,rgba(32,124,202,0.89) 50%,rgba(32,124,202,0.89) 51%,rgba(32,124,202,1) 98%,rgba(32,124,202,1) 99%,rgba(32,124,202,1) 100%); /* IE10+ */
+background-image: linear-gradient(to bottom, rgba(30,87,153,0.77) 0%,rgba(32,124,202,0.89) 50%,rgba(32,124,202,0.89) 51%,rgba(32,124,202,1) 98%,rgba(32,124,202,1) 99%,rgba(32,124,202,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c41e5799', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
 	border-color: #2d6324;
 	color: #fff;
 	text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
 	padding: 8px 10px;
 }
 form .submit input[type=submit]:hover {
-	background: #5BA150;
+	background: #207CCA;
 }
 /* Form errors */
 form .error {
@@ -445,7 +449,7 @@ p.error,
 .error-message {
 	clear: both;
 	color: #fff;
-	background: #c43c35;
+	background:#219CD6;
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);

@@ -87,36 +87,74 @@ class ProductsController extends AppController {
                 'conditions' => array('Product.ppid' => $ppid)
         ));
 
+	$this->loadModel('Company');
+	$user_id=$this->Auth->user('id');
+
+        $company= $this->Company->find('first', array(
+                'conditions' => array('Company.user_id' => $user_id)
+        ));
+	
+	$this->set('company',$company);
         $this->set('product',$product);
-        if (!$product) {
-              $this->Session->setFlash('Invalid Product ID Provided');
-              $this->redirect(array('action'=>'index'));
-        }
+
+        if($company['Company']['id']==$product['Product']['pid'])
+        {
+        	if (!$product) {
+	              $this->Session->setFlash('Invalid Product ID Provided');
+	              $this->redirect(array('action'=>'index'));
+	        }
  
-        if ($this->request->is('post') || $this->request->is('put')) {
-               $data = array('id' => $product['Product']['id'], 
+	        if ($this->request->is('post') || $this->request->is('put')) {
+	               $data = array('id' => $product['Product']['id'], 
                                        'nume' => $this->request->data['Product']['nume'], 
                                                 'pret' => $this->request->data['Product']['pret'],
                                                       'descriere' => $this->request->data['Product']['descriere'] 
-                );
-              if ($this->Product->save($data)) {
-                   $this->Session->setFlash(__('The product has been updated'));
-                   $this->redirect(array('action' => 'edit', $ppid));
-              }else{
-                   $this->Session->setFlash(__('Unable to update your product.'));
-              }
-        }
+        	        );
+              	if ($this->Product->save($data)) {
+	                   $this->Session->setFlash(__('The product has been updated'));
+	                   $this->redirect(array('action' => 'edit', $ppid));
+	              }else{
+	                   $this->Session->setFlash(__('Unable to update your product.'));
+	              }
+ 	       }
  
-        if (!$this->request->data) {
-              $this->request->data = $product;
-        }
+        	if (!$this->request->data) {
+	              $this->request->data = $product;
+	        }
+	}else {
+		$this->Session->setFlash(__('You are not allowed to edit this product'));
+		$this->redirect(array('action' => 'show'));
+	}
     }
     
     public function delete($ppid = null) {
 
-	$this->Product->deleteAll(array('Product.ppid' => $ppid), false);
-        $this->redirect(array('controller' => 'Products', 'action' => 'show'));
-	$this->Session->setFlash(__('The product has been created'));
+        if (!$ppid) {
+              $this->Session->setFlash('Please provide a product id');
+              $this->redirect(array('action'=>'index'));
+        }
+
+        $product= $this->Product->find('first', array(
+                'conditions' => array('Product.ppid' => $ppid)
+        ));
+
+        $this->loadModel('Company');
+        $user_id=$this->Auth->user('id');
+
+        $company= $this->Company->find('first', array(
+                'conditions' => array('Company.user_id' => $user_id)
+        ));
+
+        if($company['Company']['id']==$product['Product']['pid'])
+        {
+		$this->Product->deleteAll(array('Product.ppid' => $ppid), false);
+        	$this->redirect(array('controller' => 'Products', 'action' => 'show'));
+		$this->Session->setFlash(__('The product has been created'));
+	}else {
+                $this->Session->setFlash(__('You are not allowed to delete  this product'));
+                $this->redirect(array('action' => 'show'));
+        }
+
     }
 
 }

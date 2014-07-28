@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Following code will list all the products
+ * Following code will list the products of a selected company
  */
 
 // array for JSON response
@@ -16,7 +16,7 @@ $db = new DB_CONNECT();
 if (isset($_GET["id"])) {
 	$id = $_GET['id'];
 
-	// get all products from products table
+	// get all products from products table for a selected company
 	$result = mysql_query("SELECT * FROM produse WHERE pid = $id") or die(mysql_error());
 
 // check for empty result

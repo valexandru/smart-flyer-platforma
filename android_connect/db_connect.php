@@ -1,7 +1,7 @@
 <?php
 
 /**
- * A class file to connect to database
+ * A class file used for connecting to the database
  */
 class DB_CONNECT {
 
@@ -18,7 +18,7 @@ class DB_CONNECT {
     }
 
     /**
-     * Function to connect with database
+     * Connect to the database
      */
     function connect() {
         // import database connection variables
@@ -27,7 +27,7 @@ class DB_CONNECT {
         // Connecting to mysql database
         $con = mysql_connect(DB_SERVER, DB_USER, DB_PASSWORD) or die(mysql_error());
 
-        // Selecing database
+        // Selecting database
         $db = mysql_select_db(DB_DATABASE) or die(mysql_error()) or die(mysql_error());
 
         // returing connection cursor
@@ -35,7 +35,7 @@ class DB_CONNECT {
     }
 
     /**
-     * Function to close db connection
+     * Close db connection
      */
     function close() {
         // closing db connection
